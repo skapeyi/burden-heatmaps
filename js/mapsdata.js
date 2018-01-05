@@ -8,8 +8,8 @@ var data = [
     ['ug-2757', 2002]    
 ];
 
-// Create the chart
-Highcharts.mapChart('districts', {
+// District Chart
+Highcharts.mapChart('map-districts', {
     chart: {
         map: 'countries/ug/ug-all'
     },
