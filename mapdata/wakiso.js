@@ -1,4 +1,4 @@
-{
+wakiso = {
 	"type": "FeatureCollection",
 	"features": [{
 			"type": "Feature",

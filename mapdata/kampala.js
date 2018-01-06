@@ -1,4 +1,4 @@
-{
+kampala = {
 	"type": "FeatureCollection",
 	"features": [{
 			"type": "Feature",

@@ -1,5 +1,5 @@
 
-{
+combined = {
 	"type": "FeatureCollection",
 	"features": [
 		{
