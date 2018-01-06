@@ -17,7 +17,8 @@ kampala = {
 				"TYPE_3": "Sub-county",
 				"ENGTYPE_3": "Sub-county",
 				"NL_NAME_3": "",
-				"VARNAME_3": ""
+				"VARNAME_3": "",
+				"hc-key": "kla-1"
 			},
 			"geometry": {
 				"type": "Polygon",
@@ -234,7 +235,9 @@ kampala = {
 				"TYPE_3": "Sub-county",
 				"ENGTYPE_3": "Sub-county",
 				"NL_NAME_3": "",
-				"VARNAME_3": ""
+				"VARNAME_3": "",
+				"hc-key": "kla-2"
+				
 			},
 			"geometry": {
 				"type": "Polygon",
@@ -484,7 +487,8 @@ kampala = {
 				"TYPE_3": "Sub-county",
 				"ENGTYPE_3": "Sub-county",
 				"NL_NAME_3": "",
-				"VARNAME_3": "Makindye Division"
+				"VARNAME_3": "Makindye Division",
+				"hc-key": "kla-3"
 			},
 			"geometry": {
 				"type": "MultiPolygon",
@@ -1113,7 +1117,8 @@ kampala = {
 				"TYPE_3": "Sub-county",
 				"ENGTYPE_3": "Sub-county",
 				"NL_NAME_3": "",
-				"VARNAME_3": ""
+				"VARNAME_3": "",
+				"hc-key": "kla-4"
 			},
 			"geometry": {
 				"type": "MultiPolygon",
@@ -1496,7 +1501,8 @@ kampala = {
 				"TYPE_3": "Sub-county",
 				"ENGTYPE_3": "Sub-county",
 				"NL_NAME_3": "",
-				"VARNAME_3": ""
+				"VARNAME_3": "",
+				"hc-key": "kla-5"
 			},
 			"geometry": {
 				"type": "Polygon",

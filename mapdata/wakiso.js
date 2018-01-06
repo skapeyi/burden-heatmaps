@@ -17,7 +17,8 @@ wakiso = {
 				"TYPE_3": "Sub-county",
 				"ENGTYPE_3": "Sub-county",
 				"NL_NAME_3": "",
-				"VARNAME_3": ""
+				"VARNAME_3": "",
+				"hc-key": "wak-1"
 			},
 			"geometry": {
 				"type": "Polygon",
@@ -697,7 +698,8 @@ wakiso = {
 				"TYPE_3": "Sub-county",
 				"ENGTYPE_3": "Sub-county",
 				"NL_NAME_3": "",
-				"VARNAME_3": ""
+				"VARNAME_3": "",
+				"hc-key": "wak-2"
 			},
 			"geometry": {
 				"type": "MultiPolygon",
@@ -4348,7 +4350,8 @@ wakiso = {
 				"TYPE_3": "Sub-county",
 				"ENGTYPE_3": "Sub-county",
 				"NL_NAME_3": "",
-				"VARNAME_3": "Katabi"
+				"VARNAME_3": "Katabi",
+				"hc-key": "wak-3"
 			},
 			"geometry": {
 				"type": "MultiPolygon",
@@ -6195,7 +6198,8 @@ wakiso = {
 				"TYPE_3": "Sub-county",
 				"ENGTYPE_3": "Sub-county",
 				"NL_NAME_3": "",
-				"VARNAME_3": ""
+				"VARNAME_3": "",
+				"hc-key": "wak-4"
 			},
 			"geometry": {
 				"type": "Polygon",
@@ -6478,7 +6482,8 @@ wakiso = {
 				"TYPE_3": "Sub-county",
 				"ENGTYPE_3": "Sub-county",
 				"NL_NAME_3": "",
-				"VARNAME_3": ""
+				"VARNAME_3": "",
+				"hc-key": "wak-5"
 			},
 			"geometry": {
 				"type": "Polygon",
@@ -7139,7 +7144,8 @@ wakiso = {
 				"TYPE_3": "Sub-county",
 				"ENGTYPE_3": "Sub-county",
 				"NL_NAME_3": "",
-				"VARNAME_3": ""
+				"VARNAME_3": "",
+				"hc-key": "wak-6"
 			},
 			"geometry": {
 				"type": "Polygon",
@@ -7653,7 +7659,8 @@ wakiso = {
 				"TYPE_3": "Sub-county",
 				"ENGTYPE_3": "Sub-county",
 				"NL_NAME_3": "",
-				"VARNAME_3": ""
+				"VARNAME_3": "",
+				"hc-key": "wak-7"
 			},
 			"geometry": {
 				"type": "Polygon",
@@ -8454,7 +8461,8 @@ wakiso = {
 				"TYPE_3": "Sub-county",
 				"ENGTYPE_3": "Sub-county",
 				"NL_NAME_3": "",
-				"VARNAME_3": ""
+				"VARNAME_3": "",
+				"hc-key": "wak-8"
 			},
 			"geometry": {
 				"type": "Polygon",
@@ -8715,7 +8723,8 @@ wakiso = {
 				"TYPE_3": "Sub-county",
 				"ENGTYPE_3": "Sub-county",
 				"NL_NAME_3": "",
-				"VARNAME_3": ""
+				"VARNAME_3": "",
+				"hc-key": "wak-9"
 			},
 			"geometry": {
 				"type": "Polygon",
@@ -9563,7 +9572,8 @@ wakiso = {
 				"TYPE_3": "Sub-county",
 				"ENGTYPE_3": "Sub-county",
 				"NL_NAME_3": "",
-				"VARNAME_3": ""
+				"VARNAME_3": "",
+				"hc-key": "wak-10"
 			},
 			"geometry": {
 				"type": "Polygon",
@@ -10025,7 +10035,8 @@ wakiso = {
 				"TYPE_3": "Sub-county",
 				"ENGTYPE_3": "Sub-county",
 				"NL_NAME_3": "",
-				"VARNAME_3": ""
+				"VARNAME_3": "",
+				"hc-key": "wak-11"
 			},
 			"geometry": {
 				"type": "MultiPolygon",
@@ -10749,7 +10760,8 @@ wakiso = {
 				"TYPE_3": "Sub-county",
 				"ENGTYPE_3": "Sub-county",
 				"NL_NAME_3": "",
-				"VARNAME_3": ""
+				"VARNAME_3": "",
+				"hc-key": "wak-12"
 			},
 			"geometry": {
 				"type": "Polygon",
@@ -11186,7 +11198,8 @@ wakiso = {
 				"TYPE_3": "Sub-county",
 				"ENGTYPE_3": "Sub-county",
 				"NL_NAME_3": "",
-				"VARNAME_3": ""
+				"VARNAME_3": "",
+				"hc-key": "wak-13"
 			},
 			"geometry": {
 				"type": "Polygon",
@@ -11630,7 +11643,8 @@ wakiso = {
 				"TYPE_3": "Sub-county",
 				"ENGTYPE_3": "Sub-county",
 				"NL_NAME_3": "",
-				"VARNAME_3": ""
+				"VARNAME_3": "",
+				"hc-key": "wak-14"
 			},
 			"geometry": {
 				"type": "Polygon",
@@ -12094,7 +12108,8 @@ wakiso = {
 				"TYPE_3": "Sub-county",
 				"ENGTYPE_3": "Sub-county",
 				"NL_NAME_3": "",
-				"VARNAME_3": ""
+				"VARNAME_3": "",
+				"hc-key": "wak-15"
 			},
 			"geometry": {
 				"type": "Polygon",
@@ -12426,7 +12441,8 @@ wakiso = {
 				"TYPE_3": "Sub-county",
 				"ENGTYPE_3": "Sub-county",
 				"NL_NAME_3": "",
-				"VARNAME_3": ""
+				"VARNAME_3": "",
+				"hc-key": "wak-16"
 			},
 			"geometry": {
 				"type": "Polygon",
@@ -12993,7 +13009,8 @@ wakiso = {
 				"TYPE_3": "Sub-county",
 				"ENGTYPE_3": "Sub-county",
 				"NL_NAME_3": "",
-				"VARNAME_3": ""
+				"VARNAME_3": "",
+				"hc-key": "wak-17"
 			},
 			"geometry": {
 				"type": "MultiPolygon",

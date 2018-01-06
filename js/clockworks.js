@@ -25,7 +25,7 @@ Highcharts.mapChart('map-districts', {
     mapNavigation: {
         enabled: true,
         buttonOptions: {
-            horizontalAlign: 'bottom'
+            verticalAlign: 'bottom'
         }
     },
 
@@ -36,9 +36,9 @@ Highcharts.mapChart('map-districts', {
     series: [{
         data: data,
         name: 'Burden',
-        states: {
+        states: {            
             hover: {
-                color: '#BADA55'
+                color: '#E20F24'
             }
         },
         dataLabels: {
@@ -47,29 +47,41 @@ Highcharts.mapChart('map-districts', {
         }
     }]
 });
-
-var data_1 = [
-    ['255', 123],
-    ['256', 1234]
+var data_2 =[
+    ['kla-1',20],['kla-2', 30],['kla-3',15],['kla-4', 12],['kla-5',90]
 ];
+
+var data_3 = [
+    ['muk-1', 1],['muk-2', 2],['muk-3', 3],['muk-4', 4],['muk-5', 5],['muk-6',6 ],['muk-7',7 ],['muk-8',8 ],['muk-9',9 ],['muk-10',10 ],['muk-11', 11],['muk-12',12 ],['muk-13',13 ],['muk-14',14 ],['muk-15',15 ],['muk-16', 16],['muk-17',17 ],['muk-18',18 ],['muk-19',19 ],['muk-20', 20],['muk-21',21 ],['muk-22',22 ],['muk-23',23 ],['muk-24',24 ],['muk-25',25 ],['muk-26',26 ],['muk-27',27 ],['muk-28',28 ]
+];
+var data_4 = [
+    ['wak-1',1],['wak-2',2],['wak-3',3],['wak-4',4],['wak-5',5],['wak-6',6],['wak-7',7],['wak-8',8],['wak-9',9],['wak-10',10],['wak-11',11],['wak-12',12],['wak-13',13],['wak-14',14],['wak-15',15],['wak-16',16],['wak-17',17],
+];
+
+var data_combined = data_2.concat(data_3);
+data_combined = data_combined.concat(data_4);
+
+
 $('#map-subcounties').highcharts('Map', { 
-    title: {
-        text: 'Three Districts Combined'
-    },
-     mapNavigation: {
-        enabled: false,
+   title: {
+        text: 'All Disticts'
+    },    
+
+    mapNavigation: {
+        enabled: true,
         buttonOptions: {
             verticalAlign: 'bottom'
         }
     },
+
     colorAxis: {
         min: 0
     },
 
-    series : [ { 
-        data: data_1,
-        name: 'SubCounty Burden',
+    series: [{
+        data: data_combined,
         mapData: combined,
+        name: 'Burden',
         states: {
             hover: {
                 color: '#BADA55'
@@ -77,63 +89,110 @@ $('#map-subcounties').highcharts('Map', {
         },
         dataLabels: {
             enabled: true,
-            format: '{point.NAME_3}'
+            format: '{point.properties.NAME_3}'
         }
-    }] 
+    }]
 });
 
-var data_2 =[
-];
+
 $('#map-kampala').highcharts('Map', { 
+     
     title: {
-        text: 'Kampala'
-    },
-     mapNavigation: {
-        enabled: false,
+        text: 'Kampala Divisions'
+    },    
+
+    mapNavigation: {
+        enabled: true,
         buttonOptions: {
-            horizontalAlign: 'bottom'
+            verticalAlign: 'bottom'
         }
     },
-    series : [ {
+
+    colorAxis: {
+        min: 0
+    },
+
+    series: [{
         data: data_2,
-        name: 'Kamplala Subcounties/Divisions',
-        mapData: kampala 
-    } ]
+        mapData: kampala,
+        name: 'Burden',
+        states: {
+            hover: {
+                color: '#BADA55'
+            }
+        },
+        dataLabels: {
+            enabled: true,
+            format: '{point.properties.NAME_3}'
+        }
+    }]
+
 });
 
-var data_3 = [
-];
+
 $('#map-mukono').highcharts('Map', { 
-    title: {
-        text: 'Mukono'
-    },
-     mapNavigation: {
-        enabled: false,
+   title: {
+        text: 'Mukono Divisions'
+    },    
+
+    mapNavigation: {
+        enabled: true,
         buttonOptions: {
-            horizontalAlign: 'bottom'
+            verticalAlign: 'bottom'
         }
     },
-    series : [ {
+
+    colorAxis: {
+        min: 0
+    },
+
+    series: [{
         data: data_3,
-        name: 'Mukono Subcounties',
-        mapData: mukono 
-    } ] 
+        mapData: mukono,
+        name: 'Burden',
+        states: {
+            hover: {
+                color: '#BADA55'
+            }
+        },
+        dataLabels: {
+            enabled: true,
+            format: '{point.properties.NAME_3}'
+        }
+    }]
 });
 
-var data_4 = [];
+var data_4 = [
+    ['wak-1',1],['wak-2',2],['wak-3',3],['wak-4',4],['wak-5',5],['wak-6',6],['wak-7',7],['wak-8',8],['wak-9',9],['wak-10',10],['wak-11',11],['wak-12',12],['wak-13',13],['wak-14',14],['wak-15',15],['wak-16',16],['wak-17',17],
+];
 $('#map-wakiso').highcharts('Map', { 
-    title: {
-        text: 'Wakiso'
-    },
-     mapNavigation: {
-        enabled: false,
+     title: {
+        text: 'Wakiso Divisions'
+    },    
+
+    mapNavigation: {
+        enabled: true,
         buttonOptions: {
-            horizontalAlign: 'bottom'
+            verticalAlign: 'bottom'
         }
     },
-    series : [ { 
+
+    colorAxis: {
+        min: 0
+    },
+
+    series: [{
         data: data_4,
-        name: 'Wakiso Subcounties',
-        mapData: wakiso 
-    } ]
+        mapData: wakiso,
+        name: 'Burden',
+        states: {
+            hover: {
+                color: '#BADA55'
+            }
+        },
+        dataLabels: {
+            enabled: true,
+            format: '{point.properties.NAME_3}'
+        }
+    }]
 });
