@@ -2,10 +2,10 @@
 // Data is joined to map using value of 'hc-key' property by default.
 // See API docs for 'joinBy' for more info on linking data and map.
 var data = [
-
-['ug-2754', 6848],
-['ug-1687', 929],
-['ug-2757', 2002]    
+    
+    ['ug-2754', 6848],
+    ['ug-1687', 929],
+    ['ug-2757', 2002]    
 ];
 
 // Country with district
@@ -13,26 +13,26 @@ Highcharts.mapChart('map-districts', {
     chart: {
         map: 'countries/ug/ug-all'
     },
-
+    
     title: {
         text: 'Burden By District'
     },
-
+    
     subtitle: {
         text: 'Source map: <a href="http://code.highcharts.com/mapdata/countries/ug/ug-all.js">Uganda</a>'
     },
-
+    
     mapNavigation: {
         enabled: true,
         buttonOptions: {
             verticalAlign: 'bottom'
         }
     },
-
+    
     colorAxis: {
         min: 0
     },
-
+    
     series: [{
         data: data,
         name: 'Burden',
@@ -63,21 +63,60 @@ data_combined = data_combined.concat(data_4);
 
 
 $('#map-subcounties').highcharts('Map', { 
-   title: {
+    title: {
         text: 'All Disticts'
     },    
-
+    
     mapNavigation: {
         enabled: true,
         buttonOptions: {
             verticalAlign: 'bottom'
         }
     },
-
-    colorAxis: {
-        min: 0
+    legend: {
+        title: {
+            text: 'Burden',
+            style: {
+                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+            }
+        },
+        align: 'left',
+        verticalAlign: 'bottom',
+        floating: true,
+        layout: 'vertical',
+        valueDecimals: 0,
+        backgroundColor:  'rgba(255, 255, 255, 0.85)',
+        symbolRadius: 0,
+        symbolHeight: 14
     },
-
+    
+    colorAxis: {
+        dataClasses: [{
+            to: 1
+        }, 
+        {
+            from: 2,
+            to: 299
+        },{
+            from: 300,
+            to: 499
+        }, {
+            from: 500,
+            to: 999
+        }, {
+            from: 1000,
+            to: 1199
+        }, {
+            from: 1200,
+            to: 1299
+        }, {
+            from: 1300,
+            to: 1500
+        }, {
+            from: 1501
+        }]
+    },
+    
     series: [{
         data: data_combined,
         mapData: combined,
@@ -96,22 +135,61 @@ $('#map-subcounties').highcharts('Map', {
 
 
 $('#map-kampala').highcharts('Map', { 
-     
+    
     title: {
         text: 'Kampala Divisions'
     },    
-
+    
     mapNavigation: {
         enabled: true,
         buttonOptions: {
             verticalAlign: 'bottom'
         }
     },
-
-    colorAxis: {
-        min: 0
+    legend: {
+        title: {
+            text: 'TB Burden per Division(Number of Cases)',
+            style: {
+                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+            }
+        },
+        align: 'left',
+        verticalAlign: 'bottom',
+        floating: true,
+        layout: 'vertical',
+        valueDecimals: 0,
+        backgroundColor:  'rgba(255, 255, 255, 0.85)',
+        symbolRadius: 0,
+        symbolHeight: 14
     },
-
+    
+    colorAxis: {
+        dataClasses: [{
+            to: 1
+        }, 
+        {
+            from: 2,
+            to: 299
+        },{
+            from: 300,
+            to: 499
+        }, {
+            from: 500,
+            to: 999
+        }, {
+            from: 1000,
+            to: 1199
+        }, {
+            from: 1200,
+            to: 1299
+        }, {
+            from: 1300,
+            to: 1500
+        }, {
+            from: 1501
+        }]
+    },
+    
     series: [{
         data: data_2,
         mapData: kampala,
@@ -126,26 +204,65 @@ $('#map-kampala').highcharts('Map', {
             format: '{point.properties.NAME_3}'
         }
     }]
-
+    
 });
 
 
 $('#map-mukono').highcharts('Map', { 
-   title: {
-        text: 'Mukono Divisions'
+    title: {
+        text: 'Mukono Subcounties'
     },    
-
+    
     mapNavigation: {
         enabled: true,
         buttonOptions: {
             verticalAlign: 'bottom'
         }
     },
-
-    colorAxis: {
-        min: 0
+    legend: {
+        title: {
+            text: 'TB Burden per Sub-County( Number of cases)',
+            style: {
+                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+            }
+        },
+        align: 'left',
+        verticalAlign: 'bottom',
+        floating: true,
+        layout: 'vertical',
+        valueDecimals: 0,
+        backgroundColor:  'rgba(255, 255, 255, 0.85)',
+        symbolRadius: 0,
+        symbolHeight: 14
     },
-
+    
+    colorAxis: {
+        dataClasses: [{
+            to: 1
+        }, 
+        {
+            from: 2,
+            to: 299
+        },{
+            from: 300,
+            to: 499
+        }, {
+            from: 500,
+            to: 999
+        }, {
+            from: 1000,
+            to: 1199
+        }, {
+            from: 1200,
+            to: 1299
+        }, {
+            from: 1300,
+            to: 1500
+        }, {
+            from: 1501
+        }]
+    },
+    
     series: [{
         data: data_3,
         mapData: mukono,
@@ -163,21 +280,60 @@ $('#map-mukono').highcharts('Map', {
 });
 
 $('#map-wakiso').highcharts('Map', { 
-     title: {
-        text: 'Wakiso Divisions'
+    title: {
+        text: 'Wakiso Subcounties'
     },    
-
+    
     mapNavigation: {
         enabled: true,
         buttonOptions: {
             verticalAlign: 'bottom'
         }
     },
-
-    colorAxis: {
-        min: 0
+    legend: {
+        title: {
+            text: 'TB Burden per Sub-Country(Number of Cases)',
+            style: {
+                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+            }
+        },
+        align: 'left',
+        verticalAlign: 'bottom',
+        floating: true,
+        layout: 'vertical',
+        valueDecimals: 0,
+        backgroundColor:  'rgba(255, 255, 255, 0.85)',
+        symbolRadius: 0,
+        symbolHeight: 14
     },
-
+    
+    colorAxis: {
+        dataClasses: [{
+            to: 1
+        }, 
+        {
+            from: 2,
+            to: 299
+        },{
+            from: 300,
+            to: 499
+        }, {
+            from: 500,
+            to: 999
+        }, {
+            from: 1000,
+            to: 1199
+        }, {
+            from: 1200,
+            to: 1299
+        }, {
+            from: 1300,
+            to: 1500
+        }, {
+            from: 1501
+        }]
+    },
+    
     series: [{
         data: data_4,
         mapData: wakiso,
